@@ -1,0 +1,193 @@
+
+.header-image {
+    width: 100%;
+    height: 350px; 
+	position: relative;
+    overflow: hidden; 
+}
+
+.header-image img {
+    width: 100%; 
+    height: 100%;
+	object-fit: fill; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+}
+
+title{
+	display: none;
+}
+
+nav p {
+    background-color: #0095da;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+nav a:hover{
+    color: #ffa500;
+}
+
+nav a.current {
+    color: #ffa500;
+    background-color: #ffffff;
+    border-radius: 5px;
+    }
+	
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 18px;*/
+	background-color: #fff;
+    background-image: url("../images/A detailed cross-sectional view of refrigeration and air conditioning systems.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+table{
+		width: 100%;
+		border-collapse: collapse;
+		margin: 20px 0;
+}
+
+table, th, td{
+		border: 1px solid black;
+}
+
+thead th{
+		background-color: #0095da;
+		color: white;
+}
+
+caption{
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-align: center;
+}
+
+.cta-button{
+		background-color: #0095da;
+		color: white;
+		padding: 5px 10px;
+		text-decoration: none;
+		border-radius: 5px;
+}
+
+.cta-button:hover{
+		background-color: #007bb5;
+}
+
+footer {
+    background-color: #0095da;
+    color: black;
+    font-size: 1rem;
+    padding: 15px; 
+}
+
+footer div a:link{
+		text-decoration: none;
+}
+
+footer div a:hover{
+		text-decoration: underline;
+}
+
+.footerlinks{
+				color: black;
+				font-size: 12px;
+			}
+			
+.footerlinks:hover{
+	color: #ffa500;
+	}
+			
+.footertitle{
+	color: black;
+	font-size: 14px;
+	font-weight: 600;
+	}
+
+div.nav-links{
+		position: relative;
+		right: 80px;
+		bottom: -30px;
+}
+
+footer h4{
+		position: relative;
+		bottom: 65px;
+		left: 20px;
+}
+
+#footer-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+hr {
+    width: auto;
+    border: 1px line white;
+    margin-top: 20px; 
+    position: relative;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #0095da; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+}
+
+.back-button:hover {
+    background-color: #007bb5; 
+}
+
+.thankyou-image img {
+    width: 100%; 
+    height: 750px;
+}
+
+@media (max-width: 768px){
+	body{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px){
+	body{
+		font-size: 14px;
+	}
+}
+
+@media print {
+    body {
+        font-size: 12pt; 
+        color: black; 
+        background: none; 
+        margin: 0;
+        padding: 0;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+	
+	h1,h2,h4{
+		font-weight: bold;
+	}

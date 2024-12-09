@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WSRAC - Form</title>     
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="lib/fontawesome/css/all.min.css"/>
+		<link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/websiteStyle.css">
+		
+		<style>
+			   textarea{
+					width: 400px;}
+					
+			   input[type="submit"], input[type="reset"]{
+					border: 1px solid black;
+					padding: 10px;
+					border-radius: 5px;
+				}
+					
+			    input[type="submit"]{
+					color: white;
+					background-color: #0095da;}
+		</style>
+	</head>
+		
+	<body>
+	
+		<header>
+			<div class="header-image">
+			<img src="images/DALL·E 2024-09-06 20.29.51.jpg" alt="WSRAC Logo">
+			</div>
+		</header>
+			
+		<nav>
+			<p>
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<a href="management.html">MANAGEMENT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="pricesbookings.html">PRICING & BOOKINGS</a>
+				<a href="projectgallery.html">PROJECT GALLERY</a>
+				<a href="reviews.html">REVIEWS</a>
+				<a href="contact.html">CONTACT US</a>
+				<a href="rulespolicies.html">RULES & POLICIES</a>
+            </p>
+		</nav>
+
+		<main>	
+			<h1>Book Witness & Sons</h1>
+			
+			<p>
+				Enter your full name, phone number, e-mail, service you require, and the date and time you wish to be served.
+				If you choose phone on the Preferred Contact Method, provide your phone number on the message note and do the same for mail.
+			</p>
+			
+			<form action="mailto:witnessmalahle@gmail.com" method="post" enctype="text/plain">
+				<p>
+					<label for="fullname">Full Name:</label>
+					<input type="text" id="fullname" name="fullname" autofocus required>
+				</p>
+				
+				<p>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required
+					title="Must be in the form ...@gmail.com or ...@domain.ac.za">
+				</p>
+				
+				<p>
+					<label for="options" required>Required Service:</label>
+					<select id="options" name="options">
+						<option value="air-conditioning installation">Air-conditioning Installation</option>
+						<option value="air-conditioning repairs<">Air-conditioning Repairs</option>
+						<option value="air-conditioning maintenance">Air-conditioning Maintenance</option>
+						<option value="refrigeration installation">Refrigeration Installation</option>
+						<option value="refrigeration repairs">Refrigeration Repairs</option>
+						<option value="refrigeration maintenance">Refrigeration Maintenance</option>
+					</select>
+				</p>
+				
+				<p>
+					<label for="meeting-time">Select a Date and Time:</label>
+					<input type="datetime-local" id="meeting-time" name="meeting-time" required>
+				</p>
+				
+				<p>
+				   <fieldset>
+					<legend>Preferred Contact Method</legend>
+					<input type="radio" name="email" id="email" value="Email">
+						<label for="email">E-mail</label>
+						<br>
+					<input type="radio" name="phone" id="phone" value="Phone">
+						<label for="phone">Phone</label>
+						<br>
+					<input type="radio" name="mail" id="mail" value="Mail">
+						<label for="mail">Mail</label>
+				    </fieldset>
+				</p>
+				
+				<p>
+					<label for="message">Note:</label>
+					<textarea id="message"></textarea>
+				</p>
+				
+				<p>
+					<input type="submit" value="Submit Form">
+					<input type="reset" id="clearform" value="Clear Form">
+				</p>
+			</form>
+		</main>
+	</body>
+	<footer>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-xs-12 col-md-3">
+						<p>&nbsp;</p>
+							<p>
+								<img src="images/DALL·E 2024-09-06 20.29.51.jpg" alt="WSRAC Logo" class="img-responsive" style="width: 100%; max-width: 180px;">
+							</p>
+							<p>
+								<a href="images/Company Certification.pdf" target="blank">
+									<span style="padding-left: 6px;">
+										<span class="footerlinks" style="color: black;">
+											<i class="fa-solid fa-file-pdf"></i>
+											&nbsp;B-BBEE Certificate
+										</span>
+									</span>
+								</a>
+							</p>
+					</div>
+					<div class="col-xs-6 col-md-2">
+						<p>&nbsp;</p>
+						<p class="footertitle">WITNESS & SONS</p>
+						<p>
+							<a href="index.html" class="current">
+								<span class="footerlinks">HOME</span>
+							</a>
+						</p>
+						<p>
+							<a href="about.html">
+								<span class="footerlinks">ABOUT US</span>
+							</a>
+						</p>
+						<p>
+							<a href="services.html">
+								<span class="footerlinks">SERVICES</span>
+							</a>
+						</p>
+						<p>
+							<a href="projectgallery.html">
+								<span class="footerlinks">PROJECT GALLERY</span>
+							</a>
+						</p>
+					</div>
+					<div class="col-xs-6 col-md-2">
+						<p>&nbsp;</p>
+						<p class="footertitle">PROJECTS</p>
+						<p>
+							<a href="project1.html">
+								<span class="footerlinks">RESIDENTIAL/ OFFICE</span>
+							</a>
+						</p>
+						<p>
+							<a href="project2.html">
+								<span class="footerlinks">COLD & FREEZER ROOMS</span>
+							</a>
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<P>&nbsp;</P>
+						<p class="footertitle">CONTACT US</p>
+						<p class="footerbody">
+							<i class="fa fa-phone"></i>
+							&nbsp;&nbsp;079 083 8308
+						</p>
+						<p>
+							<a href="mailto:info@witnessandsons.co.za">
+								<span class="footerlinks">
+									<i class="fa fa-envelope">&nbsp;</i>
+									info@witnessandsons.co.za
+								</span>
+							</a>
+						</p>
+						<p class="footerbody">
+							<i class="fa fa-location-dot"></i>&nbsp;&nbsp;
+							1981 GaJoseph Ext, Bushbuckridge, Mpumalanga, South Africa
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr><br>
+		<p id="footer-info" style="text-align: center;"> 
+		   Copyright 2024 &copy; Witness & Sons Refrigeration & Air-conditioning. All Rights Reserved.
+		</p>
+	</footer>
+</html>
